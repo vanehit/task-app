@@ -36,32 +36,52 @@ Aplicación web simple para gestionar tareas al estilo **Trello**, desarrollada 
 
 ## 📁 Estructura de carpetas
 
-📦task-app
-┣ 📂backend
-┃ ┣ 📂controllers
-┃ ┗ taskController.js
-┃ ┣ 📂models
-┃ ┗ taskModel.js
-┃ ┣ 📂routes
-┃ ┗ taskRoutes.js
-┃ ┗ server.js
-┣ 📂frontend
-┃ ┣ 📂components
-┃ ┃ ┣ 📂TaskForm
-┃ ┃ ┗ taskForm.jsx
-┃ ┃ ┣ 📂TaskItem
-┃ ┃ ┗ taskItem.jsx
-┃ ┃ ┗ 📂TaskList
-┃ ┃ ┗ taskList.jsx
-┃ ┣ 📂context
-┃ ┃ ┗ TaskContext.jsx
-┃ ┣ 📂styles
-┃ ┃ ┗ styles.scss
-┃ ┣ App.jsx
-┃ ┗ main.jsx
+![Estructura de Carpetas](./img/estructuraCarpeta1.png)
+
+![Estructura de Carpetas](./img/estructuraCarpeta2.png)
+
+
 
 
 ---
+## Capturas de pantalla
 
-## 🔄 Instalación y ejecución
+Aquí te muestro cómo se ve la app funcionando:
 
+### Pantalla principal
+
+![Pantalla principal](./img/tasksApp-foto1.png)
+
+### Menú de opciones
+
+![Tareas En Progreso...](./img/tasksApp-foto2.png)
+
+![Tareas En Progreso...Hechas](./img/tasksApp-foto3.png)
+
+![Tareas En Progreso...Edición](./img/tasksApp-foto4.png)
+
+![Tareas Hechas...](./img/tasksApp-foto5.png)
+
+
+### 🚀 Instalación y ejecución
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/vanehit/task-app.git
+cd task-app
+
+2. Instalar dependencias del backend:
+cd ../backend
+npm install
+npm run dev
+
+El servidor se ejecutará por defecto en:
+📍 http://localhost:5000
+
+3. Instalar dependencias del frontend:
+cd ../frontend
+npm install
+npm run dev
+
+La aplicación se abrirá en el navegador en:
+🌐 http://localhost:5173
