@@ -1,0 +1,53 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+.task-card {
+  border-radius: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  &.hecha {
+    border-left: 6px solid #2a9d8f;
+    background-color: #e8f9f0;
+
+    .estado {
+      color: #2a9d8f;
+      font-weight: bold;
+    }
+  }
+
+  &.pendiente {
+    border-left: 6px solid #e76f51;
+    background-color: #fdf1ee;
+
+    .estado {
+      color: #e76f51;
+      font-weight: bold;
+    }
+  }
+
+  .card-title {
+    color: #1d3557;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+}
+.task-board {
+  .col-md-4 {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 70vh;
+    margin-bottom: 2rem;
+
+    h4 {
+      color: #1d3557;
+      font-weight: 600;
+    }
+  }
+}
