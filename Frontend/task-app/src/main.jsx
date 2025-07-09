@@ -11,6 +11,7 @@ import { TaskProvider } from './context/TaskContext.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    {/* Envolvemos toda la app con el contexto global de tareas */}
     <TaskProvider>
       <App />
     </TaskProvider>

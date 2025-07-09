@@ -1,14 +1,17 @@
 import React, { createContext, useState, useEffect } from 'react';
-
+// Creamos el contexto para toda la app
 export const TaskContext = createContext();
 
+// Componente provider del contexto
 export const TaskProvider = ({ children }) => {
+  // Estado global de las tareas, agrupadas por estado
   const [tasks, setTasks] = useState({
     todo: [],
     doing: [],
     done: [],
   });
 
+  // URL base de la API que usamos para hacer el CRUD en el Backend
   const API_URL = "http://localhost:5000/api/tasks";
 
   // 🔄 Cargar tareas al iniciar
@@ -108,6 +111,7 @@ export const TaskProvider = ({ children }) => {
       .catch((err) => console.error("Error al mover tarea:", err));
   };
 
+  // Retornamos el contexto con todas las funciones y el estado compartido
   return (
     <TaskContext.Provider value={{ tasks, addTask, editTask, deleteTask, moveTask }}>
       {children}
